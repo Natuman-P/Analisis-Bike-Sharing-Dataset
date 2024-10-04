@@ -10,7 +10,7 @@ import io
 
 @st.cache_resource
 def read_data():
-    hour_df = pd.read_csv('/content/hour.csv')
+    hour_df = pd.read_csv('/data/hour.csv')
 
  
     categorical_columns = ['season', 'yr', 'mnth', 'hr', 'holiday', 'weekday', 'workingday', 'weathersit']
