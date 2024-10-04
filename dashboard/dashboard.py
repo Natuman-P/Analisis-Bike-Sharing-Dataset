@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -13,7 +12,7 @@ uploaded_file = st.file_uploader("Unggah file CSV dataset penggunaan sepeda", ty
 
 if uploaded_file is not None:
     # Membaca dataset
-    data = pd.read_csv(uploaded_file)
+    data = pd.read_csv(data/hour.csv)
     st.write("Dataframe:", data.head())
 
     # Statistik Deskriptif
