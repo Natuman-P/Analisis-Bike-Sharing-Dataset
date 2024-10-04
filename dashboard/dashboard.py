@@ -7,7 +7,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Fungsi untuk membaca data
-@st.cache_resource
+@st.cache_data
 def read_data():
     hour_df = pd.read_csv('hour.csv')  # Replace with the correct path if needed
 
@@ -33,7 +33,7 @@ def read_data():
 
     return hour_df
 
-
+# Load data
 hour_df = read_data()
 
 # ------------------------
@@ -137,4 +137,3 @@ plt.title('Pengaruh Kelembapan Terhadap Jumlah Peminjaman Sepeda')
 
 # Menampilkan grafik dengan Streamlit
 st.pyplot(plt.gcf())
-
